@@ -82,3 +82,12 @@ h1 {
     height: fit-content;
     width: 86%;
 }
+.painel {
+    border: 8px solid black;
+    display: flex;
+    align-items: center;
+    background-image: url(../svg/frame.svg);
+    background-size: contain;
+    background-repeat:  no-repeat;
+    
+}
