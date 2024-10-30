@@ -89,5 +89,32 @@ h1 {
     background-image: url(../svg/frame.svg);
     background-size: contain;
     background-repeat:  no-repeat;
-    
+
+}
+
+.boxPainel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+}
+
+.playerLedPanel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+     flex-direction: row ;
+
+}
+.computerLedPanel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+     flex-direction: row ;
+
 }
