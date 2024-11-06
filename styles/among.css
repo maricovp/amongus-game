@@ -1,0 +1,151 @@
+.size{
+    width:  fit-content;
+    height:  fit-content;
+    animation:  move 22s infinite;
+    position: absolute;
+    top: 25%;
+    z-index: 1;
+    transform: scale(0.4);
+    opacity: .5;
+}
+.player{
+ background-color: brown;
+ border: 10px solid black;
+ border-bottom: none;
+ border-radius: 60px 80px 0 0;
+ height: 200px;
+ width: 140px;
+ margin: auto;
+ top: 50px;
+ left:  -15%;
+ z-index: 1;
+ animation: rotate 15s infinite;
+}
+.player:after{
+    content: "";
+    position: absolute;
+
+}
+.legs{
+    height: 50px;
+    width: 60px;
+    background-color:  violet;
+    position: absolute;
+    left: -10px;
+    bottom: -50px;
+    border: 10px;
+    border-top: none;
+    border-radius: 0 0 22px 22px;
+    z-index: 1;
+
+}
+.legs:before {
+    content:  "";
+    height: 37px;
+    width: 40px;
+    background-color: red;
+    position: absolute;
+    right: -90px;
+border: 10px solid black;
+border-top: none;
+border-radius: 0 0 22px 22px;
+}
+.legs:after {
+    content: "";
+    height: 10px;
+    width: 55px;
+    background-color: black;
+    position: absolute;
+    top: -10px;
+    left: 40px;
+    border-radius: 0 0 10px 0;
+}
+.back{
+    height: 120px;
+    width: 35px;
+    background-color: red;
+    border:10px solid black;
+    border-right: none;
+}
+.back:before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 26px;
+    background-color: red;
+    bottom: -0.5px;
+    left: -1px;
+    border border-radius:  0 22px 0 0;
+
+}
+.glass{
+    height: 75px;
+    width: 110px;
+    background-color: blue;
+    border: 10px solid black;
+    border-radius: 25px 50px 30px 30px;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    z-index: 2
+}
+.glass::before{
+    content: "";
+    position: absolute;
+    height: 85%;
+    width: 65px;
+    background-color: aqua;
+    top: 0px;
+    right: -0px;
+    border-radius: 0 28px 3px 30px;
+}
+.glass::after{
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 22%;
+    background-color: antiquewhite;
+    left: 39px;
+    top: 5px;
+    -webkit-transform: rotate(6deg);
+        -ms-transform: rotate(6deg);
+            transform: rotate(6deg);
+}
+@keyframes move{
+    0% {
+        right: 100%;
+    }
+    50%{
+        right: 1%;
+    }
+    51%{
+        right: -1%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+@keyframes rotate{
+    0% {
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(70deg);
+    }
+    45%{
+        transform: rotate(215deg);
+    }
+    60%{
+        transform: rotate(325deg);
+    }
+    90%{
+        transform: rotate(-485deg);
+
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes rotate{
+    
+}
